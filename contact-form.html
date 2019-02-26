@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Сайт портфолио</title>
+    
+    <!-- Инструкция для IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Для старых версий IE говорим, чтобы он отображал страницу по более новым стандартам -->
+    
+    <!-- Отображать страницу в масштабе 100% -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Ширина страницы должна быть ровна ширине устройства и изначальный масштаб должен быть равен 1 (100%) -->
+    
+    <!-- Нормализация стилей -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    
+     <!-- Собственные стили -->
+    <link rel="stylesheet" href="css/main.css">   
+    
+     <!-- Подключаем веб-шрифты -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|PT+Sans+Caption:400,700" rel="stylesheet"> 
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="image/favicon/favicon-16x16.png">
+    
+    <!--  Подключаем анимацию  -->
+    <link rel="stylesheet" href="libs/animate.css">
+    
+</head>
+<body>
+    
+    
+<!--.....................................
+
+КОНТАКТЫ
+
+.......................................-->
+   
+   <div id="portfolio_yak"></div>    
+    <div class="portfolio">
+        <div class="container">
+            
+            <div class="title wow fadeInDown">
+                Обратная связь
+            </div>
+            <div class="row">
+                
+                <form action="php/mail.php" class="contact_form" method="POST">
+
+                    <!-- Hidden Required Fields -->
+                    <input type="hidden" name="project_name" value="Сайт Портфолио">
+                    <input type="hidden" name="admin_email" value="pozhiloylogin@yandex.ru">
+                    <input type="hidden" name="email_from" value="info@websweet.ru">
+                    <input type="hidden" name="form_subject" value="Сообщение с сайта websweet.ru">
+                    <!-- END Hidden Required Fields -->
+
+                    <h2>Заполните заявку</h2>
+                    <div class="subtitle">и я свяжусь с вами</div>
+
+                    <label for="f_name">Ваше имя:</label>
+                    <input type="text" id="f_name" name="Имя" placeholder="">
+
+                    <label for="f_email">Ваш email:</label>
+                    <input type="text" id="f_email" name="E-mail" placeholder="">
+
+                    <label for="f_email">Ваш адрес:</label>
+                    <input type="text" id="f_email" name="address" placeholder="">
+
+                    <label for="f_name">Сообщение:</label>
+                    <textarea name="message" id="" cols="30" rows="10"></textarea>
+
+                    <input type="submit" value="Отправить заявку">
+
+	            </form>
+    
+            </div>
+        </div>
+    </div>
+<!-- ....................................
+
+FOOTER
+
+.........................................-->  
+   
+   <div id="footer_yak"></div>    
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <p class="footer_name wow fadeInDown">Владислав Кондраков</p> 
+                    <p class="wow fadeIn">HTML верстка сайтов</p>
+                </div>
+                <div class="col-4">
+                    <p class="footer_social wow fadeInDown">Мои профили в социальных сетях:</p>
+                    <p class="footer_social_icons wow fadeInDown">
+                        
+                        <a href="#" target="_blank">
+                            <i class="fa fa-vk" aria-hidden="true"></i>
+                        </a>
+                        
+                        <a href="#" target="_blank">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        
+                        <a href="#" target="_blank">
+                            <i class="fa fa-google-plus" aria-hidden="true"></i>
+                        </a>
+                        
+                    </p>
+                </div>
+                <div class="col-4">
+                    <div><a href="#" class="button wow bounce" target="_blank">связаться Вконтакте</a></div>
+                    <p class="wow fadeInUp">Вы можете мне написать по любому вопросу, связанному с версткой</p> 
+                </div>
+            </div>
+        </div>    
+    </div>
+    
+    <!-- Wow.js для эффектов анимации animate.css -->
+    <script src="libs/wow.js/wow.min.js"></script>
+
+    
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter50628031 = new Ya.Metrika2({
+                        id:50628031,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true
+                    });
+                } catch(e) { }
+            });
+    
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/tag.js";
+    
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks2");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/50628031" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+    
+    <!-- Файл со скриптами -->
+    <script src="js/main.js"></script>
+    
+    <!-- Chatra {literal} -->
+    <script>
+        (function(d, w, c) {
+            w.ChatraID = 'WzBqS3TryfP5GMPaS';
+            var s = d.createElement('script');
+            w[c] = w[c] || function() {
+                (w[c].q = w[c].q || []).push(arguments);
+            };
+            s.async = true;
+            s.src = 'https://call.chatra.io/chatra.js';
+            if (d.head) d.head.appendChild(s);
+        })(document, window, 'Chatra');
+    </script>
+    <!-- /Chatra {/literal} -->
+    
+    <!-- Код виджета Чатры -->
+    <script>
+    window.ChatraSetup = {
+        colors: {
+            buttonText: '#000000', /* цвет текста кнопки чата */
+            buttonBg: '#ffffff'    /* цвет фона кнопки чата */
+        }
+    };
+    </script>
+    
+</body>
+</html>
